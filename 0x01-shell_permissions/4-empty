@@ -1,3 +1,2 @@
+#!/bin/bash
 #!/usr/bin/env bash
-# Create an empthy file called hello
-touch hello
