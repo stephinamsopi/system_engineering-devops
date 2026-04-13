@@ -1,2 +1,3 @@
 #!/bin/bash
 su betty
+echo -e "#!/bin/bash\nsu betty" > 0-iam_betty
