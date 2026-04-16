@@ -1,2 +1,3 @@
 #!/bin/bash
 chmod +u+x 0-hello_world
+./0-hello_world
