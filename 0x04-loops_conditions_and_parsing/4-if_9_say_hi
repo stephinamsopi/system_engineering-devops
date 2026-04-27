@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# A script that loops 10 times, printing "Best School"
+# and adds "Hi" on the 9th iteration.
+
+count=1
+while [ $count -le 10 ]; do
+    echo "Best School"
+    
+    # Check if it is the 9th iteration
+    if [ $count -eq 9 ]; then
+        echo "Hi"
+    fi
+    
+    # Increment the counter
+    ((count++))
+done
