@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Script that displays part of the filenames after the first dash
+
+# Loop through all non-hidden files in the current directory
+for file in *; do
+    # Check if it is a file (skips directories if necessary, 
+    # though '*' usually works for this specific task)
+    if [ -f "$file" ]; then
+        # Use cut to display the part of the name after the first dash (-)
+        # -d'-' sets the delimiter to a dash
+        # -f2- selects field 2 and all fields thereafter
+        echo "$file" | cut -d'-' -f2-
+    fi
+done
