@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Displays I am invincible!!! when receiving SIGTERM
-trap "echo I am invincible!!!" SIGTERM
+# Handles SIGTERM without exiting
+trap 'echo I am invincible!!!' SIGTERM
 while true
- do
+do
   echo "To infinity and beyond"
   sleep 2
 done
