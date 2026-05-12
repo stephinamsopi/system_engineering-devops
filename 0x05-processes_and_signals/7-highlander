@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# Handles SIGTERM without exiting
-trap 'echo I am invincible!!!' SIGTERM
-while true
-do
-  echo "To infinity and beyond"
-  sleep 2
+# Description: Script that resists SIGTERM
+
+# Trap the SIGTERM signal (signal 15)
+trap 'echo "I am invincible!!!"' SIGTERM
+
+# Infinite loop that displays the required message
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
 done
